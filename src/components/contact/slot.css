@@ -1,0 +1,102 @@
+
+.slot-container{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin :0  auto;
+    
+} 
+
+.slot-image{  
+display: flex;
+width: 250px;
+height: 250px;
+align-items: center;
+justify-content: center;
+border: 3px;
+border-radius: 30px;
+box-shadow: 3px 3px 12px rgb(198, 193, 193);
+
+
+}
+
+.slot-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: 1px;
+    border-radius: 30px;
+}
+
+.description{
+   
+height:auto;
+width: 100%;
+flex: 1;
+display: flex;
+flex-direction: column;
+padding: 25px;
+border-radius: 8px;
+background-color:#f0f0f0 ;
+justify-content: center;
+align-items: center;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.description h2 {
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+.description p {
+   padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.description button {
+    color: #fff;
+    background-color: #2C3E50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 20px;
+  
+}
+.description button:hover {
+    background-color: #1a252f;
+  }
+
+  @media (max-width: 800px) {
+  
+    .slot-image,
+   .description {
+      width: 100%;
+    }
+  
+    .description h2,
+    .description h4 {
+        font-size: 22px;
+        font-weight: 400;
+        padding: 30px;
+    }
+    .description p {
+      font-size: 14px;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .description button {
+      padding: 8px 16px;
+    }
+    .slot-image {
+        object-fit: contain;
+        height: 250px;
+        width: 250px;
+    }
+  }
